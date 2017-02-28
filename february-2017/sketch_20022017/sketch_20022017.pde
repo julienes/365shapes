@@ -10,7 +10,7 @@ void draw(){
   r+=0.03;
   background(7,11,96);
   lights();
-  spotLight(51, 102, 126, 50, 50, 200,0, 0, -1, 0, 200);;
+  spotLight(51, 102, 126, 50, 50, 200,0, 0, -1, 0, 200);
   translate(width/2, height/2);
   rotateY(r);
   rotateZ(r);
