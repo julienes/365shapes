@@ -25,7 +25,7 @@ void draw(){
     }
   }
   ball.add(new Ball(x, x2, y, y2));
-  println(ball.size());
+
 }
 
 void move(){

@@ -10,7 +10,7 @@ void draw() {
   stroke(255);
   t = t + 0.03;
   float n = noise(t);
-  n = map(n, 0,1, 10,150);
+  n = map(n, 0,1, 10,100);
   float maxX = n;
   float maxY = n;
 

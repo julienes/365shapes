@@ -28,4 +28,5 @@ void draw(){
   }
   triangle.add(new Triangle());
   println(triangle.size());
+
 }
