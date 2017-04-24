@@ -14,4 +14,5 @@ void draw(){
   for(int i = 0; i<=circleS.length-1; i++){
      circleS[i].display();
    }
+   saveFrame("Outpu/gol_####.png");
 }
