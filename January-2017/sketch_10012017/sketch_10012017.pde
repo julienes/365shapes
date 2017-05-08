@@ -1,9 +1,9 @@
 ArrayList <Mover> m;
-float posX = width/2;
-float posY = height/2;
-PVector location = new PVector(width/2,height/2);;
+float posX;
+float posY;
+PVector location = new PVector(0,0);;
 PVector velocity = new PVector(0,0);
-PVector acceleration = new PVector(-0.001,0.01);;
+PVector acceleration;
 float topspeed = 5;
 
 void setup(){
@@ -13,6 +13,7 @@ void setup(){
 }
 
 void draw(){
+  translate(width/2, height/2);
   background(6,7,175); 
   moveUpdate();
   for(int i = m.size()-1; i >=0; i--){
@@ -33,6 +34,7 @@ void moveUpdate(){
   velocity.add(acceleration);
   velocity.limit(topspeed);
   location.add(velocity);
+  location.limit(200);
   posX = location.x;
   posY = location.y;
 }

@@ -5,12 +5,12 @@ void setup(){
   smooth();
   bs = new BallSystem();
   background(36,53,194);
+  noStroke();
 }
 
 void draw(){
   fill(36,53,194,10);
-  rect(0,0, width, height);
-  noStroke();
+  rect(-10,-10, width, height);
   fill(255);
   translate(width/2, height/2);
   bs.display();
