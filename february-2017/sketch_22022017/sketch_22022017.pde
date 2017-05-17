@@ -8,7 +8,7 @@ void setup(){
 }
 
 void draw(){
-  background(7,11,96);
+  background(6,7,175);
   translate(width/2, height/2);
   rose.display();
 }

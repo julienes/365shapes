@@ -32,7 +32,7 @@ void setup(){
 void draw(){
   lights();
   noFill();
-  background(5,15,230);
+  background(6,7,175);
   stroke(255);
   for(int i = 0; i<=ball.length-1; i++){
     beginShape();

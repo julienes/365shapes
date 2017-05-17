@@ -8,6 +8,6 @@ void setup(){
 
 void draw(){
   translate(width/2, height/2);
-  background(7,11,96);
+  background(6,7,175);
   cs.display();
 }

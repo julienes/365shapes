@@ -7,7 +7,7 @@ class Ball{
   PVector acc = new PVector();
   int s = 8;
   float maxspeed =25;
-  float maxforce = 0.3;
+  float maxforce = 0.5;
   PVector seek;
   PVector arrive;
   

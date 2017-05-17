@@ -8,7 +8,7 @@ void setup(){
 
 void draw(){
   spin();
-  background(5,15,230);
+  background(6,7,175);
   lights();
   fill(255);
   noStroke();

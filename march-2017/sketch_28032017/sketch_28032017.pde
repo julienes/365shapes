@@ -11,7 +11,7 @@ void setup(){
 }
 
 void draw(){
-  background(5,15,230);
+  background(6,7,175);
   float yoff = 0;
   for(float y = 7; y< rows-5; y+=0.5){
     float xoff = 0;

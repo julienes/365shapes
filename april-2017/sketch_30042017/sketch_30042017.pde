@@ -12,7 +12,7 @@ void setup(){
 
 void draw(){
   translate(width/2, height/2);
-  background(36,53,194);
+  background(6,7,175);
   for(int i = 0; i<=circle.length-1; i++){
     circle[i].display(i);
   }

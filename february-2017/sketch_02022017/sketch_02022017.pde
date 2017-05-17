@@ -5,14 +5,14 @@ void setup(){
   size(500,500);
   smooth();
   spots = new ArrayList<PVector>();
-  img = loadImage("B-01.jpg");
+  img = loadImage("b.jpg");
   img.loadPixels();
   for(int x = 0; x < img.width; x++){
     for(int y = 0; y < img.height; y++){
       int index = x + y * width;
       color c = img.pixels[index];
       float b = brightness(c);
-      if(b > 10){
+      if(b < 10){
         spots.add(new PVector(x,y));
       }
     }
@@ -24,7 +24,7 @@ void setup(){
 }
 
 void draw(){
-  background(7,11,96);
+  background(6,7,175);
   for(int i = 0; i<=ball.length-1; i++){
     ball[i].move();
     ball[i].display();

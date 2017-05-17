@@ -11,7 +11,7 @@ void setup(){
 }
 
 void draw(){
-  background(36,53,194);
+  background(6,7,175);
   update();
   translate(width/2, height/2);
   for(int i = 0; i<exa.size(); i++){

@@ -25,7 +25,7 @@ void draw(){
     yoff += 0.2; 
   }
   
-  background(5,15,230);
+  background(6,7,175);
   stroke(255);
   fill(255);
   translate((width/2)+10, (height/2)-10);
@@ -39,4 +39,5 @@ void draw(){
       popMatrix();
     }
   }
+
 }

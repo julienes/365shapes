@@ -13,9 +13,9 @@ void draw() {
    n = map(n, 0,1, 1,15);
   int detail = round(n);
   r+=0.03;
-  background(7,11,96);
+  background(6,7,175);
   stroke(255);
-  fill(7,11,96);
+  fill(6,7,175);
   translate(width/2, height/2, 0);
   rotateX(r);
   rotateY(r);

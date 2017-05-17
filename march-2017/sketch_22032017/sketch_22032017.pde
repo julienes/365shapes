@@ -1,7 +1,8 @@
 float t = 100;
-float r = 50;
+float r = 10;
 float rotation = 0;
-float speed = 0.02;
+float speed;
+boolean accelerate = true;
 ArrayList<PVector>tor;
 void setup(){
   size(500,500, P3D);
@@ -20,11 +21,13 @@ void setup(){
 
 void draw(){
   lights();
-  noFill();
-  background(5,15,230);
-  stroke(255);
+  background(6,7,175);
+  noStroke();
+  fill(255);
   translate(width/2, height/2);
-  rotateY(rotation);
+  sphere(50);
+  noFill();
+  stroke(255);
   rotateX(rotation);
   for(PVector torus : tor){
      beginShape(POINTS);

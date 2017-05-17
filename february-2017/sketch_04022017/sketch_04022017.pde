@@ -17,7 +17,7 @@ void setup(){
 
 void draw(){
   noStroke();
-  background(7,11,96);
+  background(6,7,175);
   zoom = zoom + e;
   translate(0,0,zoom);
   for(int i = 0; i<ball.length-1; i++){

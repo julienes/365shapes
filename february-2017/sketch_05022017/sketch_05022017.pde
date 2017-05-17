@@ -13,7 +13,7 @@ void setup(){
 }
 
 void draw(){
-  background(7,11,96);
+  background(6,7,175);
   for(int i = 0; i<=circle.length-1;i++){
     t = t + 0.03;
     float n = noise(t);

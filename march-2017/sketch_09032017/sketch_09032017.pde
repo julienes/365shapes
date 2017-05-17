@@ -8,7 +8,7 @@ void setup(){
 }
 
 void draw(){
-  background(5,15,230);
+  background(6,7,175);
   translate(width/2, height/2);
   for(int i = 0; i<ball.size()-1; i++){
     if(ball.size()>=2){

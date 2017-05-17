@@ -24,7 +24,7 @@ void draw(){
     yoff += 0.2; 
   }
   
-  background(5,15,230);
+  background(6,7,175);
   stroke(255);
   noFill();
   translate(width/2, height/2);

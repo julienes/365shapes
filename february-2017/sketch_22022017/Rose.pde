@@ -23,7 +23,7 @@ class Rose {
     beginShape();
     for(float a = 0; a < TWO_PI*d; a+=0.1){
       rand = random(0,1);
-      float r = 200 * cos(k*a);
+      float r = 100 * cos(k*a);
       float x = r * cos(a);
       float y = r * sin(a);
       if(rand<=0.4){

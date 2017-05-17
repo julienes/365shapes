@@ -25,11 +25,12 @@ void setup(){
 }
 
 void draw(){
-  background(7,11,96);
+  background(6,7,175);
   lights();
   spotLight(51, 102, 126, 50, 50, 200,0, 0, -1, 0, 200);
   translate(240, 80, -150);
   rotateY(rotation);
+  scale(0.8);
   for(int i = 0; i<=ball.length-1; i++){
     pushMatrix();
     ball[i].move();

@@ -11,7 +11,7 @@ void setup() {
 void draw() {
   translate(width/2, height/2);
   rotateX(QUARTER_PI);
-  background(35,53,193);
+  background(6,7,175);
   stroke(255);
   noFill();
   lights();

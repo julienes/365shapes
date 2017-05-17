@@ -18,7 +18,7 @@ void setup(){
 
 void draw(){
   lights();
-  background(5,15,230);
+  background(6,7,175);
   stroke(255);
   noFill();
   for(int i = 0; i<=c.length-1; i++){

@@ -28,7 +28,7 @@ void setup(){
 }
 
 void draw(){
-  background(35,53,193);
+  background(6,7,175);
   lights();
   for(int i = 0; i<sphere.length; i++){
     sphere[i].update();

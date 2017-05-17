@@ -13,7 +13,7 @@ void setup(){
 }
 
 void draw(){
-  background(7,11,96);
+  background(6,7,175);
   translate(width/2, height/2);
   for(int i = rose.size()-1; i >=0; i--){
    move();
@@ -25,7 +25,6 @@ void draw(){
     }
   }
   rose.add(new Rose());
-  println(rose.size());
 }
 
 void move(){

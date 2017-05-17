@@ -8,11 +8,11 @@ void setup(){
   size(500,500);
   smooth();
   noStroke();
-  background(36,53,194);
+  background(6,7,175);
 }
 
 void draw(){
-  fill(36,53,194,40);
+  fill(6,7,175,40);
   rect(0,0,width, height);
   if(grow){
     n = map(angle, 0, TWO_PI, 0,200);

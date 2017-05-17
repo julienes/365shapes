@@ -1,7 +1,7 @@
 class Ball{
   int r = int(random(0,spots.size()));
   PVector spot = spots.get(r);
-  PVector pos = new PVector(random(width), random(height));
+  PVector pos = new PVector(random(100,400), random(100,400));
   PVector target = new PVector(spot.x, spot.y);
   PVector vel = PVector.random2D();
   PVector acc = new PVector();

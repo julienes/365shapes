@@ -12,7 +12,7 @@ void setup(){
 }
 
 void draw(){
-  background(5,15,230);
+  background(6,7,175);
   stroke(0);
   for(int i = 0; i<= ball.length-1; i++){
   ball[i].draw();

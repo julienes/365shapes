@@ -19,7 +19,7 @@ void draw(){
   count1++;
   t+=0.01;
   float n = noise(t);
-  background(19,65,188);
+  background(6,7,175);
   x1 = sin(angle2)*100*(n*1.5);
   y1 = cos(angle)*130*(n*1.5);
   x2 = sin(angle)*150*(n*1.5);

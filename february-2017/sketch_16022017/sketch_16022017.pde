@@ -14,7 +14,7 @@ void draw(){
   spotLight(51, 102, 126, 50, 50, 200,0, 0, -1, 0, 200);
   r = random(0,1);
   pos = new PVector(random(20,480), random(-200,0));
-  background(7,11,96);
+  background(6,7,175);
   stroke(0);
   for(int i = ball.size()-1; i>=0; i--){
   Ball b = ball.get(i);
@@ -29,5 +29,4 @@ void draw(){
   if(r<=0.1){
     ball.add(new Ball(pos, vel, acc, random(40,80)));
   }
-  println(ball.size());
 }

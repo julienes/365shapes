@@ -12,7 +12,7 @@ void setup(){
 
 
 void draw(){
-  background(35,53,193);
+  background(6,7,175);
   float angle = 0;
   pushMatrix();
   translate(width/2, height/2);

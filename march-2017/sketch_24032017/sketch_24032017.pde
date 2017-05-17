@@ -11,7 +11,7 @@ void setup(){
 
 void draw(){
   cam.lookAt(0, 0, z);
-  background(5,15,230);
+ background(6,7,175);
   lights();
   fill(255);
   noStroke();

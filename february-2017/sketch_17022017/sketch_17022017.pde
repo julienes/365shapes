@@ -4,7 +4,7 @@ void setup(){
 }
 
 void draw(){
-  background(7,11,96);
+  background(6,7,175);
   for(float x=100; x<width-50; x+=50) {
     for (float y = 100; y<height-50; y+=50){
       fill(255);

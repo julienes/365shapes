@@ -8,7 +8,7 @@ void setup(){
 
 void draw(){
   noStroke();
-  fill(19,65,188,50);
+  fill(6,7,175,50);
   rect(0,0,width, height);
   ellipses.display();
 }

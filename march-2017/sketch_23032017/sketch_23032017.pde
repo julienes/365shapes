@@ -9,7 +9,7 @@ void setup(){
 }
 
 void draw(){
-  background(5,15,230);
+  background(6,7,175);
   stroke(255);
   strokeWeight(5);
   noFill();

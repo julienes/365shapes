@@ -6,7 +6,7 @@ void setup() {
 }
 
 void draw() {
-  background(7,11,96);
+  background(6,7,175);
   stroke(255);
   t = t + 0.03;
   float n = noise(t);
@@ -21,7 +21,7 @@ void draw() {
     pushMatrix();
     translate(x, y);
     rotate(radians(i-frameCount*6));
-    rect(0, 0, 100, 100);
+    rect(0, 0, 50, 50);
     popMatrix();
   }
 }

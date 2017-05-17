@@ -22,7 +22,7 @@ void draw(){
   if(time>100){
     r = 0;
   }
-  background(36,53,194);
+  background(6,7,175);
   for(int i= 0; i<ball.size(); i++){
     Ball b = ball.get(i);
     pushMatrix();

@@ -12,10 +12,9 @@ void setup(){
 }
 
 void draw(){
- background(36,53,194);
+ background(6,7,175);
  translate(width/2, height/2);
  for(int i= 0; i<=shape.length-1; i++){
  shape[i].display();
  }
- saveFrame("Output/gol_####.png");
 }

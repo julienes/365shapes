@@ -12,7 +12,7 @@ void setup(){
 
 void draw(){
   lights();
-  background(5,15,230);
+  background(6,7,175);
   noStroke();
   noFill();
   

@@ -17,7 +17,7 @@ void setup(){
 }
 
 void draw(){
-  background(19,65,188);
+  background(6,7,175);
   noStroke();
   lights();
   translate(width/2, height/2);

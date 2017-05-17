@@ -19,7 +19,7 @@ class Ball{
   void display(){
     alpha = alpha-4;
     stroke(255,alpha);
-    fill(7,11,96, alpha);
+    fill(6,7,175, alpha);
     line(250, 250, x, y);
     line(x, y, x2, y2);
     ellipse(x, y, 25,25);

@@ -6,7 +6,7 @@ void setup() {
 }
 
 void draw() {
-  background(7,11,96);
+  background(6,7,175);
   stroke(255);
   t = t + 0.02;
   float n = noise(t);

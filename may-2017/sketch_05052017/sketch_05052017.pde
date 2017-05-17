@@ -24,7 +24,7 @@ float supershape(float theta, float m, float n1, float n2, float n3){
 void draw() {
   m = map(sin(change), -1, 1, 4, 20);
   change += 0.04;
-  background(19,65,188);
+  background(6,7,175);
   noStroke();
   fill(255);
   lights();

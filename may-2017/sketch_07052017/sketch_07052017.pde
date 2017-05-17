@@ -16,7 +16,7 @@ void setup(){
 }
 
 void draw(){
-  background(19,65,188);
+  background(6,7,175);
   count++;
   strokeWeight(2);
   if(count==40){

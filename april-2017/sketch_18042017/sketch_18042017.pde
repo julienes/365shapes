@@ -26,7 +26,7 @@ void setup(){
 
 void draw(){
   lights();
-  background(35,53,193);
+  background(6,7,175);
   translate(width/2-100, height/2-50);
   rotateX(PI/4);
   for(int i = 0; i<cubes.size(); i++){

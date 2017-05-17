@@ -7,7 +7,7 @@ void setup(){
 }
 
 void draw(){
-  background(5, 15, 230);
+  background(6,7,175);
   lights();
   float r = 200;
   int total = 130;

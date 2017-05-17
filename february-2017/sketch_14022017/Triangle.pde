@@ -18,7 +18,7 @@ class Triangle{
   
   void display(float r){
     rotate(r);
-    stroke(7,11,96, alpha);
+    stroke(6,7,175, alpha);
     fill(255, alpha);
     triangle(0,0,-20,20,20,20);
   }

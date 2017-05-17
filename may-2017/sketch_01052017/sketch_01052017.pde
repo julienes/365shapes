@@ -12,8 +12,9 @@ void setup(){
 }
 
 void draw(){
-  background(19,65,188);
+  background(6,7,175);
   for(Arrow a : arrow){
     a.display();
   }
+ 
 }

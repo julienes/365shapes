@@ -5,8 +5,8 @@ void setup(){
 }
 
 void draw(){
-  background(7,11,96);
-  stroke(7,11,96);
+  background(6,7,175);
+  stroke(6,7,175);
   r += 0.00008;
   translate(width/2-90, height/2);
   for(int i = 0; i< 200; i+=10){

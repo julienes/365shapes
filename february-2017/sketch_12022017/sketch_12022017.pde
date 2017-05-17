@@ -17,7 +17,7 @@ void setup(){
 }
 
 void draw(){;
-  background(7, 11, 96);
+  background(6,7,175);
    lights();
     spotLight(51, 102, 126, 50, 50, 200,0, 0, -1, 0, 200);
     noStroke();

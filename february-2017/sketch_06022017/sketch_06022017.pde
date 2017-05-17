@@ -2,7 +2,7 @@ float r = 0;
 void setup(){
   size(500,500);
   smooth();
-  background(7,11,96);
+  background(6,7,175);
 }
 
 void draw(){

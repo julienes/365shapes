@@ -15,7 +15,7 @@ void setup(){
 }
 
 void draw(){
-  background(7,11,96);
+  background(6,7,175);
   move();
   for(int i = ball.size()-1; i>=0; i--){
     Ball b = ball.get(i);
@@ -25,7 +25,6 @@ void draw(){
     }
   }
   ball.add(new Ball(x, x2, y, y2));
-
 }
 
 void move(){

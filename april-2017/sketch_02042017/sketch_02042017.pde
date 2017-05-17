@@ -11,7 +11,7 @@ void setup(){
 }
 
 void draw(){
-  background(35,53,193);
+  background(6,7,175);
   stroke(255);
   strokeWeight(5);
   for(Stick s : sticks){

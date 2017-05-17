@@ -10,7 +10,7 @@ void setup(){
 }
 
 void draw(){
-  background(35,53,193);
+  background(6,7,175);
   translate(width/2,height/2);
   float yoff = 0;
   float r = 150;

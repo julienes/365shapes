@@ -6,9 +6,9 @@ boolean drawing = true;
 void setup(){
  size(500,500);
  smooth();
- background(19,65,188);
+ background(6,7,175);
  stroke(255);
- fill(19,65,188);
+ fill(6,7,175);
 }
 
 void draw(){

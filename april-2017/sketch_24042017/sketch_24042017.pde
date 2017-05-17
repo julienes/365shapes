@@ -13,7 +13,7 @@ void draw(){
   count++;
   translate(width/2, height-150);
   rotateY(t);
-  background(35,53,193);
+  background(6,7,175);
   scale(0.5);
   branch(-100);
 }

@@ -9,7 +9,7 @@ void setup(){
 }
 
 void draw(){
-  background(5,15,230);
+  background(6,7,175);
   noFill();
   stroke(255);
   translate(width/2, height/2);
@@ -17,5 +17,4 @@ void draw(){
     circle[i].update();
     circle[i].display();
   }
-
 }

@@ -12,7 +12,7 @@ void setup(){
 }
 
 void draw(){
-  background(36,53,194);
+  background(6,7,175);
   for(CircleSystem c : circle){
     c.display();
   }

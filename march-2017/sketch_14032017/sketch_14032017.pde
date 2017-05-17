@@ -16,7 +16,7 @@ void draw(){
   translate(width/2, height/2);
   rotateX(rotate);
   rotateZ(rotate);
-  background(5,15,230);
+  background(6,7,175);
   beginShape(TRIANGLE_STRIP);
   for(float x = -200; x<=200; x+=2){
     for(float y = -200; y<=200; y+=2){

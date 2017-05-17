@@ -16,7 +16,7 @@ void setup(){
 }
 
 void draw(){;
-  background(7, 11, 96);
+  background(6,7,175);
   for(int i = 0; i<= ball.length-1; i++){
    noFill();
   stroke(255);

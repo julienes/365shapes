@@ -15,7 +15,7 @@ void setup(){
 
 void draw(){
   int count = spiral.size();
-  background(19,65,188);
+  background(6,7,175);
   translate(width/2, height/2);
   if(scalar>=100 && angle >= TWO_PI){
     erase = true;
@@ -48,7 +48,6 @@ void draw(){
     }
   }
   
-  println(erase);
  
   
   for(Spiral s : spiral){

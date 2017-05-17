@@ -14,7 +14,7 @@ void setup(){
 
 void draw(){
   noFill();
-  background(35,53,193);
+  background(6,7,175);
   stroke(255);
   strokeWeight(2);
   translate(width/2, height/2);

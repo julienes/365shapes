@@ -15,7 +15,7 @@ void setup(){
 
 void draw(){
   lights();
-  background(35,53,193);
+  background(6,7,175);
   move();
   translate(width/2, height);
   rotateX(PI/3);

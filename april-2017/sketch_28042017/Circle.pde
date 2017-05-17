@@ -23,7 +23,7 @@ class Circle{
     
     fill(255);
     strokeWeight(5);
-    stroke(36,53,194);
+    stroke(6,7,175);
     x = sin(i)*r;
     y = cos(i)*r;
     ellipse(x,y,size,size);

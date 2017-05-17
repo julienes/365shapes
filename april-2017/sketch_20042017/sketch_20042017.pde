@@ -9,7 +9,7 @@ void setup(){
 }
 
 void draw(){
-  background(35,53,193);
+  background(6,7,175);
   translate(width/2, height/2);
   for(int i = 0; i<=ball.length-1; i++){
     PVector v1 = ball[i].position;
