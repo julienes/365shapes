@@ -5,11 +5,11 @@ Boolean inverse = false;
 void setup(){
   size(500,500,P3D);
   smooth();
-   background(7,11,96);
+   background(6,7,175);
 }
 
 void draw(){
-  stroke(7,11,96);
+  stroke(6,7,175);
   acceleration = PVector.random3D();
   translate(width/2, height/2);
   if(inverse){

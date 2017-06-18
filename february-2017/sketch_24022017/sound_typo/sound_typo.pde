@@ -17,7 +17,7 @@ void setup(){
   jingle.play();
   fft = new FFT( jingle.bufferSize(), jingle.sampleRate() );
   spots = new ArrayList<PVector>();
-  img = loadImage("fdlm.jpg");
+  img = loadImage("boom-01.jpg");
   img.loadPixels();
   for(int x = 0; x < img.width; x++){
     for(int y = 0; y < img.height; y++){
@@ -37,7 +37,7 @@ void setup(){
 
 void draw(){
   fft.forward( jingle.mix );
-  background(0);
+  background(6,7,175);
   for(int i = 0; i<=ball.length-1; i++){
     ball[i].move();
     ball[i].display();
@@ -49,8 +49,8 @@ class Ball{
   PVector spot = spots.get(r);
   float x = spot.x;
   float y = spot.y;
-  float angle = random(0,1);
-  float speed = random(0.5,1);
+  float angle = random(0,0.7);
+  float speed = random(0.05,0.07);
   
   Ball(){}
   
@@ -58,14 +58,14 @@ class Ball{
   void move(){
     x = spot.x;
     y = spot.y;
-    x = x + sin(angle)*fft.getBand(1)*random(1,8);
-    y = y + cos(angle)*fft.getBand(1)*random(1,8);
+    x = x + sin(angle)*fft.getBand(1)*random(1,2);
+    y = y + cos(angle)*fft.getBand(1)*random(1,2);
     angle = angle+speed;
   }
   
   void display(){
     fill(255,200);
     noStroke();
-    ellipse(x,y,5,5);
+    ellipse(x,y,2,2);
   }
 }
