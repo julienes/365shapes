@@ -1,33 +1,52 @@
 PVector[][] globe;
+float[] angle = new float[56];
 float r = 120;
 float rot = 0;
-int total = 10;
+int total = 7;
 int num = 0;
+int Y_AXIS = 1;
+int X_AXIS = 2;
+color c1, c2;
+float flying = 0;
 void setup(){
   size(500,500, P3D);
   smooth();
-  stroke(255);
+  c1 = color(0,157,203);
+  c2 = color(0,94,132);
+  stroke(0,182,230);
   noFill();
+  rectMode(CENTER);
   globe = new PVector[total+1][total+1];
+  for(int i = 0; i<=angle.length-1; i++){
+    float turn = random(-QUARTER_PI,QUARTER_PI);
+    angle[i] = turn;
+  }
+  
+}
+
+void draw(){
+  flying -= 0.005;
+  float yoff = flying;
   for(int i = 0; i< total+1; i++){
+    float xoff = flying;
     float lon = map(i, 0, total, 0, TWO_PI);
      for(int j = 0; j< total+1; j++){
        float lat = map(j, 0, total, 0, TWO_PI);
        float x = (r/2)*(cos(lon)+cos(lat));
        float y = (r/2)*(sin(lon)+sin(lat));
        float z = r*sin((lon-lat)/2);
-        globe[i][j] = new PVector(x, y, z);
+       float n = map(noise(xoff,yoff), 0,1,-10,10);
+        globe[i][j] = new PVector(x+n, y+n, z+n);
+        xoff += 0.05;
      }
+     yoff += 0.5; 
   }
-}
-
-void draw(){
-  rot+=0.02;
+  rot+=0.01;
   lights();
   translate(width/2, height/2);
-  rotateY(rot);
-  rotateX(rot);
-  background(6,7,175);
+  //rotateY(rot);
+  //rotateX(rot);
+  background(255);
   //fill(255);
   //lights();
   noFill();
@@ -42,18 +61,22 @@ void draw(){
     }
     endShape();
   }
-  fill(255);
+  fill(0,182,230);
   for (int i = 0; i < total; i++) {
     for (int j = 0; j < total+1; j++) {
-      num++;
+      if(num>=56){
+        num = 56;
+      }else{
+        num++;
+      }
       PVector v1 = globe[i][j];
       pushMatrix();
+      rotateZ(angle[num-1]);
       translate(v1.x, v1.y, v1.z);
-      rotateX(rot*5);
       if(num%2 == 1){
-        box(10);
+        rect(0,0,10,10,2);
       }else{
-        box(20);
+        rect(0,0,20,20,5);
       }
       popMatrix();
     }

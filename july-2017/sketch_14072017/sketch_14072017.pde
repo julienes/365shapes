@@ -1,18 +1,16 @@
 float[] positionsX;
 float[] positionsY;
-int t = 125;
-float r1 = 0;
-float r2 = QUARTER_PI;
-float speed1 = 0.02;
-float speed2 = 0.04;
-
-
+ArrayList<Rond>rond;
+int t = 50;
+int count = 0;
+float r = 0;
 void setup(){
-  size(500,500);
+  size(500,500,P3D);
   smooth();
+  strokeWeight(2);
   positionsX = new float[t];
   positionsY = new float[t];
-  stroke(255);
+  rond = new ArrayList<Rond>();
   for(int i = 0; i<=t-1; i++){
     float angle = map(i,0,t-1,0,TWO_PI);
     float x = 125*sin(angle);
@@ -20,15 +18,19 @@ void setup(){
     positionsX[i] = x;
     positionsY[i] = y;
   }
+  
+  for(int i = 0; i<=t-1; i++){
+    rond.add(new Rond(positionsX[i], positionsY[i], positionsX[(t-1)-i],positionsY[(t-1)-i]));
+  }
 }
 
 void draw(){
-  r1 = r1 + speed1;
-  r2 = r2 + speed2;
+  r+=0.01;
   background(6,7,175);
   translate(width/2, height/2);
-  //rotate(r1);
-  for(int i = 0; i<=t-1; i++){
-    line(positionsX[i], positionsY[i],positionsX[(t-1)-i], positionsY[(t-1)-i]);
+  //rotateY(r);
+  for(Rond r : rond){
+    r.update();
+    r.display();
   }
 }
