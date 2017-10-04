@@ -18,11 +18,11 @@ void draw(){
   background(6,7,175);
   lights();
   translate(width/2, height/2);
-  rotateY(PI/4);
+  rotateY(PI/2);
   //rotateX(r);
   fill(255);
   noStroke();
-  sphere(50);
+  //sphere(50);
   stroke(255);
   noFill();
   sin3D();
