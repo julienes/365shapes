@@ -1,5 +1,7 @@
 float total = 500;
 float a = 30;
+float angle = 0;
+float speed = 0.5;
 
 void setup(){
   size(500,500);
@@ -11,9 +13,10 @@ void draw(){
   background(6,7,175);
   translate(width/2, height/2);
   pushMatrix();
-  rotate(HALF_PI);
+  rotate(HALF_PI + angle);
   petale();
   popMatrix();
+  angle = angle + speed;
 }
 
 void petale(){
