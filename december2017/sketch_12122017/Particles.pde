@@ -1,6 +1,6 @@
 class Particles {
   float alpha = 255;
-  Particle[] particles = new Particle[10];
+  Particle[] particles = new Particle[20];
   Particles(){
     for(int i = 0; i < particles.length; i++){
       particles[i] = new Particle();
@@ -16,7 +16,7 @@ class Particles {
   }
   
   void display(){
-   alpha-=0.5;
+    alpha-=1;
     for(int i = 0; i < particles.length; i++){
       particles[i].update1();
     }

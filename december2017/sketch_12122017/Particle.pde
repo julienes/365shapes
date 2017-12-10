@@ -1,10 +1,11 @@
 class Particle{
-  PVector p new PVector(random(10), random(10)), p01d;
+  PVector p, p01d;
   float stepSize, angle;
   boolean isOutside = false;
-  float noiseScale = 60;
-  float noiseStrength = 5;
+  float noiseScale = 500;
+  float noiseStrength = 10;
   Particle(){
+    p = new PVector(random(10), random(10));
     p01d = new PVector(p.x, p.y);
     stepSize = random(1,10);
   }
@@ -22,7 +23,7 @@ class Particle{
       isOutside = true;
     }else if(p.y > height - 100){
       isOutside = true;
-    }
+    }p.limit(1000);
     
         
     if(isOutside){
