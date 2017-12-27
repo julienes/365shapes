@@ -4,7 +4,7 @@ float r=0;
 float speed = 0;
 boolean acc = false;
 void setup() {
-  size(600, 600, P3D);
+  size(500, 500, P3D);
   globe = new PVector[total+1][total+1];
 }
 

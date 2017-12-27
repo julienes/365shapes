@@ -15,7 +15,7 @@ void setup(){
 
 void draw(){
   background(6,7,175);
-  spotLight(255, 255, 255, width/2, height/2, 400, 0, 0, -1, PI/2, 6);
+  lights();
   translate(width/2, height/2);
   for(int i = 0; i<=bol.length-1; i++){
     bol[i].display();

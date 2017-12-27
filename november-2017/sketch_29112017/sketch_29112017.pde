@@ -15,4 +15,5 @@ void draw(){
   rotateX(HALF_PI);
   for(int i = 0; i < globe.length; i++){
     globe[i].display();
+  }
 }

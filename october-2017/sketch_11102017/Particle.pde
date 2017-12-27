@@ -1,5 +1,5 @@
 class Particle{
-  PVector p new PVector(random(10), random(10)), p01d;
+  PVector p = new PVector(random(10), random(10)), p01d;
   float stepSize, angle;
   boolean isOutside = false;
   float noiseScale = 60;

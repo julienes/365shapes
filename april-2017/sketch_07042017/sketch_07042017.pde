@@ -11,7 +11,7 @@ void setup(){
 }
 
 void draw(){
-  background(35,53,193);
+  background(6,7,175);
   float yoff = 0;
   stroke(255);
   for(float y = 30; y<rows-30; y++){

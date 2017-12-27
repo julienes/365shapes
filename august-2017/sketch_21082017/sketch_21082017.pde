@@ -22,6 +22,7 @@ void draw(){
   translate(width/2, height/2);
   rotateY(angle);
   rotateZ(angle);
+  scale(0.8);
   for(int i = 0; i <= scribble.length-1; i++){
     scribble[i].display();
   }

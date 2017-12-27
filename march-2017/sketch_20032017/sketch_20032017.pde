@@ -5,7 +5,7 @@ float flying = 0;
 PVector[][] globe;
 int total = 150;
 void setup() {
-  size(600, 600, P3D);
+  size(500, 500, P3D);
   cam = new PeasyCam(this, 500);
   globe = new PVector[total+1][total+1];
 }

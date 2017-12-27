@@ -13,7 +13,7 @@ void setup(){
   smooth();
   c1 = color(0,157,203);
   c2 = color(0,94,132);
-  stroke(0,182,230);
+  stroke(255);
   noFill();
   rectMode(CENTER);
   globe = new PVector[total+1][total+1];
@@ -46,7 +46,7 @@ void draw(){
   translate(width/2, height/2);
   //rotateY(rot);
   //rotateX(rot);
-  background(255);
+  background(6,7,175);
   //fill(255);
   //lights();
   noFill();
@@ -61,7 +61,7 @@ void draw(){
     }
     endShape();
   }
-  fill(0,182,230);
+  fill(255);
   for (int i = 0; i < total; i++) {
     for (int j = 0; j < total+1; j++) {
       if(num>=56){

@@ -29,6 +29,7 @@ class Flower{
   }
   
   void display(){
+    fill(255);
     rotate(angle);
     beginShape();
     for(float angle = 0; angle < TWO_PI; angle+=increment){

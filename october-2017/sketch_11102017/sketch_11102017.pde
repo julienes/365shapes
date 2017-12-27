@@ -5,6 +5,7 @@ boolean restart = false;
 void setup(){
   size(500,500);
   smooth();
+  noiseSeed(24);
   particles = new ArrayList<Particles>();
   stroke(255);
 }
