@@ -1,4 +1,4 @@
-Blob[] blobs = new Blob[5];
+Blob[] blobs = new Blob[10];
 
 void setup(){
   size(500,500);

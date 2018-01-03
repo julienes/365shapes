@@ -1,3 +1,5 @@
+import processing.pdf.*;
+boolean record;
 Blob blob = new Blob();
 
 void setup(){
